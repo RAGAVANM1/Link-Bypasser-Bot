@@ -143,7 +143,7 @@ def scrapeIndex(url, username="none", password="none"):
 
 def tnlink(url):
     client = requests.session()
-    DOMAIN = "https://page.tnlink.in/"
+    DOMAIN = "https://page.tnshort.net/"
     url = url[:-1] if url[-1] == '/' else url
     code = url.split("/")[-1]
     final_url = f"{DOMAIN}/{code}"
@@ -2140,7 +2140,7 @@ def shortners(url):
         return mdiskpro(url)
 
     # tnshort
-    elif "tnshort.in" in url:
+    elif "tnshort.net" in url:
         print("entered tnshort:",url)
         return tnshort(url)
 
